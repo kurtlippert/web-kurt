@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Html exposing (Html, program, text, div)
+import Html.Styled exposing (toUnstyled)
 import Messages exposing (Msg)
 import Models exposing (Model, initialModel)
 import Update exposing (update)
@@ -25,7 +26,7 @@ main : Program Never Model Msg
 main =
     program
         { init = init
-        , view = view
+        , view = view >> toUnstyled
         , update = update
         , subscriptions = subscriptions
         }

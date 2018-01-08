@@ -1,6 +1,6 @@
 {
-  "name": "excel-import",
-  "description": "Excel import processing front-end",
+  "name": "kurt-web",
+  "description": "Personal website",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Kurt Lippert",
@@ -10,7 +10,8 @@
     "start": "webpack-dev-server --hot --inline --colors --content-base src/",
     "build": "webpack --display-error-details",
     "stats": "webpack --profile --json > stats.json",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "elm-pak": "elm-package install"
   },
   "dependencies": {
     "ace-css": "^1.1.0",
@@ -23,6 +24,7 @@
     "awesome-typescript-loader": "^3.0.8",
     "clean-webpack-plugin": "^0.1.15",
     "css-loader": "^0.25.0",
+    "elm-format": "^0.6.1-alpha",
     "elm-hot-loader": "^0.5.4",
     "elm-webpack-loader": "^4.2.0",
     "extract-text-webpack-plugin": "^2.0.0",

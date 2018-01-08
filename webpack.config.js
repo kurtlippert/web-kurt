@@ -14,6 +14,8 @@ console.log( 'WEBPACK GO!');
 
 // determine build env
 const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 'development';
+
+// and output files based on build env
 const outputFilename = TARGET_ENV === 'production' ? '[name].[hash].js' : '[name].js';
 const vendorCSSName = TARGET_ENV === 'production' ? 'vendor.[contenthash].css' : 'vendor.css';
 
@@ -23,7 +25,7 @@ const commonConfig = {
   output: {
     path:       outputPath,
     filename:   outputFilename,
-    publicPath: TARGET_ENV === 'development' ? 'http://localhost:8080/' : '/wizard-excel-app/'
+    publicPath: TARGET_ENV === 'development' ? 'http://localhost:8080/' : '/kurt-web/'
   },
 
   resolve: {
@@ -59,7 +61,7 @@ const commonConfig = {
     new HtmlWebpackPlugin({
       template: 'src/static/index.template.ejs',
       inject:   'body',
-      title:    'Onboarding Wizard'
+      title:    'Kurt Lippert'
     }),
     new CheckerPlugin()
   ],

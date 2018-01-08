@@ -1,2 +1,2 @@
-# etl-explorer
-etl explorer in elm
+# kurt-web
+personal website
