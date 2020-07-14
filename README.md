@@ -1,2 +1,0 @@
-# web-kurt
-personal website
