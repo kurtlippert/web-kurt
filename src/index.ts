@@ -19,7 +19,7 @@ const header = section(
 /**
  * The render function requires one root node, 'fragment' is
  * like an empty root node (the rendered html will list the
- * passed in elements without)
+ * passed in elements without a root)
  * @param elements react nodes you want to combine in the fragment
  */
 const fragment = (...elements: React.ReactNode[]) => r(f, {}, elements);
